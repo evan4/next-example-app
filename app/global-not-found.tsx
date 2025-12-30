@@ -21,7 +21,7 @@ export default function GlobalNotFound() {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-500 text-white`}
       >
         <Header />
         <main>
