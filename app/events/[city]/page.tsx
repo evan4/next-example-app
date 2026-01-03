@@ -1,5 +1,6 @@
-import H1 from "@/app/components/h1";
-import { EventoEvent } from "@/app/lib/types";
+import EventsList from "@/components/events-list";
+import H1 from "@/components/h1";
+import { EventoEvent } from "@/lib/types";
 type EventsPageProps = {
   params: {
     city: string;
@@ -31,9 +32,7 @@ export default async function EventsPage({ params }: EventsPageProps) {
   return (
     <main className="flex flex-col items-center py-24 px-[20px] min-h-[110vh]">
       <H1>{caption}</H1>
-      {events.map((event) => (
-        <section key={event.id}>{event.name}</section>
-      ))}
+      <EventsList events={events} />
     </main>
   );
 }
