@@ -4,7 +4,7 @@ This Nextjs project related with [evento](https://github.com/ByteGrad/Profession
 - [Nextjs](https://nextjs.org/) -  Next.js enables you to create high-quality web applications with the power of React components 
 - [TypeScript](https://www.typescriptlang.org/) - TypeScript is a strongly typed programming language that builds upon JavaScript by adding optional static type annotations.
 - [Vite](https://vite.dev/) - Vite is a modern frontend build tool
-
+- [Tailwind CSS](https://tailwindcss.com/) - Tailwind CSS is a utility-first CSS framework
 ## Installation
 
 Install dependencies:

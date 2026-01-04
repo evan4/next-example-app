@@ -31,7 +31,7 @@ export default async function EventsPage({ params }: EventsPageProps) {
 
   return (
     <main className="flex flex-col items-center py-24 px-[20px] min-h-[110vh]">
-      <H1>{caption}</H1>
+      <H1 className="mb-28">{caption}</H1>
       <EventsList events={events} />
     </main>
   );
