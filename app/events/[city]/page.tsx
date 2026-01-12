@@ -20,13 +20,24 @@ export default async function EventsPage({ params }: EventsPageProps) {
       events = await response.json();
 
       if (events.length === 0) {
-        caption = "There is no events for this city";
+        caption = "There are no events for this city";
       }
     } else {
       caption = `Sorry, there is no city in our database with name such ${city}`;
     }
   } else {
-    caption = "Please type the city name.";
+    const response = await fetch(
+      `${process.env.NEXT_PROJECT_API_URL}/course-assets/projects/evento/api/events`
+    );
+    if (response.ok) {
+      events = await response.json();
+
+      if (events.length === 0) {
+        caption = "There are no events";
+      }
+    } else {
+      caption = `Sorry, there are no events in our database`;
+    }
   }
 
   return (
