@@ -1,3 +1,11 @@
+import SkeletonCard from "@/components/skeleton-card";
+
 export default function Loading() {
-  return <div>Loading city events...</div>;
+  return (
+    <div className="flex flex-wrap justify-center max-x-[1100px] mx-auto px-[20px] py-24 gap-20">
+      <SkeletonCard />
+      <SkeletonCard />
+      <SkeletonCard />
+    </div>
+  );
 }
